@@ -1,0 +1,13 @@
+Punteros
+
+	1.Escribir un programa que declare una variable llamada a, un puntero del tipo de la variable creada, inicialice la variable e inicialice el puntero para que apunte a la variable creada. Luego que imprima por pantalla la dirección de memoria de la variable, el valor que almacena la variable, el valor del puntero y el valor al que apunta el puntero.
+
+	2. Desarrollar un programa que declare e inicialice un vector tipo char con el abecedario. Luego mostrar en pantalla el abecedario en mayúscula y minúscula, utilizando punteros. Nota la función para pasar a mayúscula es toupper() y a minúsculas es tolower(). Ejemplo cadena[i] = tolower(cadena[i]);
+
+	3. Escribir un programa que cree un vector de estructura llamada articulo que tenga los atributos nombre y precio, de tamaño 3. Luego mostrar el listado. Utilice punteros.
+
+	4. Desarrolle un programa que declare e inicialice un vector de 5 valores (4.5,8,2.3,1.1,3). Luego, se pide que halle el valor máximo, mínimo y el promedio de ellos. Finalmente mostrar los resultados. Utilice punteros para realizar el ejercicio.
+
+	5.  Escribir un programa que intercambie los valores enteros de a y b, para ello crea una función e intercambie los números usando punteros.
+
+	6. Escribir un programa que contenga un menú de opciones con las operaciones que puede realizar sumar, restar, multiplicar y dividir dos números, elevar a una potencia y calcular la raíz de número.  Las operaciones deben ser programadas utilizando funciones y punteros.
