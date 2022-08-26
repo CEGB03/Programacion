@@ -1,7 +1,12 @@
 /*
-	10. Se tiene un vector de 10 elementos con valores numÃ©ricos enteros por
-punteros. Luego crear una funcion que muestre los valores que estÃ¡n en
-posiciones impares, y otra funcion con las posiciones pares.
+	15. Elabore una especificación y su solución.
 */
 #include <stdio.h>
 #include <stdlib.h>
+int main(){
+	
+	printf("\n");
+	system("pause");
+	return 0;
+}
+	

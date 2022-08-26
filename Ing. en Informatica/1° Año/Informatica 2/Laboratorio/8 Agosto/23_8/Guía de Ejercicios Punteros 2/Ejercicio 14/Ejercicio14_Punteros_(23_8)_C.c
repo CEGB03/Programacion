@@ -1,7 +1,14 @@
 /*
-	10. Se tiene un vector de 10 elementos con valores numéricos enteros por
-punteros. Luego crear una funcion que muestre los valores que están en
-posiciones impares, y otra funcion con las posiciones pares.
+	14. Desarrolle un programa que declare e inicialice un arreglo de 2x3 con
+valores aleatorios. Luego mostrar los valores. Utilice punteros para realizar
+el ejercicio.
 */
 #include <stdio.h>
 #include <stdlib.h>
+int main(){
+	
+	printf("\n");
+	system("pause");
+	return 0;
+}
+	
