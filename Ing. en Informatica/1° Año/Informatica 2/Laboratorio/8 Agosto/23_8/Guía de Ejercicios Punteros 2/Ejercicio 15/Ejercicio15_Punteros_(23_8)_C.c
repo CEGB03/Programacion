@@ -1,5 +1,5 @@
 /*
-	15. Elabore una especificación y su solución.
+	15. Elabore una especificaciÃ³n y su soluciÃ³n.
 */
 #include <stdio.h>
 #include <stdlib.h>
