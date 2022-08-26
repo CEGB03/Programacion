@@ -13,22 +13,22 @@ El promedio.
 #include <stdio.h>
 #include <stdlib.h>
 #define L_Secuencia 5
-float Sumatoria_F(float *);
-int Promedio_F();
 
 int main(){
-	float Secuencia[L_Secuencia]={4.5,8,2.3,1.1,3}, *P_Arreglo=Secuencia, 
+	float Secuencia[L_Secuencia]={4.5,8,2.3,1.1,3},*P_Arreglo=NULL,
 		Sumatoria=0, *P_Sum=&Sumatoria,
-		Promedio=0,*P_Prom=&Promedio;
-	Sumatoria=Sumatoria_F(Secuencia);
-	printf("\n");
-	system("pause");
-	return 0;
-}
-float Sumatoria_F(float *Puntero_Arreglo){
+		Promedio=0, *P_Prom=&Promedio;
+	
 	for(int ii=0 ; ii<L_Secuencia ; ii++){
-		Puntero_Arreglo=
-		printf("%.2f | ",(*Puntero_Arreglo +ii));
+		P_Arreglo=&Secuencia[ii];
+		printf("%.2f | ",*P_Arreglo);
+		Sumatoria+=(*P_Arreglo);
 	}
 	printf("\n");
+	Promedio=(*P_Sum)/(L_Secuencia);	
+	printf("\n");
+	printf("La sumatoria da como resultado: %.2f\n", *P_Sum);
+	printf("El Promedio da como resultado: %.2f\n", *P_Prom);
+	system("pause");
+	return 0;
 }
