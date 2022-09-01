@@ -16,7 +16,7 @@ int main(){
 	int *P_Mem=NULL,
 		Ingreso=0, *P_Ingreso=&Ingreso,
 		Nuevo_Ingreso=0, *P_Nuevo_Ingreso=&Nuevo_Ingreso;
-	printf("Â¿Cuntos numeros quiere cargar? ");
+	printf("¿Cuntos numeros quiere cargar? ");
 	scanf("%d",&Ingreso);
 	P_Mem=(int *) malloc(Ingreso*sizeof(int));
 	if(P_Mem==NULL){
