@@ -14,7 +14,7 @@ las opciones:
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define Tam_Struct 3
+#define Tam_Struct 2
 
 struct Empleado{
 	int Legajo;
@@ -154,27 +154,29 @@ void Actualizar_Sueldo_Empleado(struct Empleado *P_Emp){
 	}
 }
 void Ordenar_Sueldos_Empleado(struct Empleado *P_Emp){
-	int jj=0, Aux=0;
+	int jj=0;
+	struct Empleado Aux;
 	for(int ii=1 ; ii<Tam_Struct ; ii++){
-		Aux=P_Emp[ii].Sueldo;//Guardado el 1° elemento en la variable auxiliar
+		Aux=P_Emp[ii];//Guardado el 1° elemento en la variable auxiliar
 		jj=ii-1;//Utilizando una 2° variable para hacer las comparaciones
-		while((P_Emp[jj].Sueldo>Aux)&&(jj>=0)){//Comparo el valor de la posicion jj con Aux
-			P_Emp[jj+1].Sueldo=P_Emp[jj].Sueldo;//Realiza el intercambio
+		while((P_Emp[jj].Sueldo>Aux.Sueldo)&&(jj>=0)){//Comparo el valor de la posicion jj con Aux
+			P_Emp[jj+1]=P_Emp[jj];//Realiza el intercambio
 			jj--;//Recorre todos los valores mayores a la derecha
-			P_Emp[jj+1].Sueldo=Aux;
+			P_Emp[jj+1]=Aux;
 		}
 	}
 	printf("Ordenaminedo finalizado\n");
 }
 void Ordenar_Anios_Empleado(struct Empleado *P_Emp){
-	int jj=0, Aux=0;
+	int jj=0;
+	struct Empleado Aux;
 	for(int ii=1 ; ii<Tam_Struct ; ii++){
-		Aux=P_Emp[ii].Antiguedad;//Guardado el 1° elemento en la variable auxiliar
+		Aux=P_Emp[ii];//Guardado el 1° elemento en la variable auxiliar
 		jj=ii-1;//Utilizando una 2° variable para hacer las comparaciones
-		while((P_Emp[jj].Antiguedad>Aux)&&(jj>=0)){//Comparo el valor de la posicion jj con Aux
-			P_Emp[jj+1].Antiguedad=P_Emp[jj].Antiguedad;//Realiza el intercambio
+		while((P_Emp[jj].Antiguedad>Aux.Antiguedad)&&(jj>=0)){//Comparo el valor de la posicion jj con Aux
+			P_Emp[jj+1]=P_Emp[jj];//Realiza el intercambio
 			jj--;//Recorre todos los valores mayores a la derecha
-			P_Emp[jj+1].Antiguedad=Aux;
+			P_Emp[jj+1]=Aux;
 		}
 	}
 	printf("Ordenaminedo finalizado\n");
