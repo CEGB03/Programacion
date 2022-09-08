@@ -39,46 +39,16 @@ void Mostrar_Mazo(int Arreglo[Palos][Cartas]){
 }
 void Mostrar_Mazo_Ordenado(int Arreglo[Palos][Cartas]){
 	int iii=1;
-	for(int ii=0 ; ii<Palos ;ii++ ){
-		for(int jj=0 ; jj<Cartas ;jj++ ){
-			if((Arreglo[ii][jj])==iii){
-				printf("La carta numero %d es un ",iii);
-				switch(jj){
-					case(0):
-						printf("As");
-					break;
-					case(11):
-						printf("Jota");
-					break;
-					case(12):
-						printf("Reina");
-					break;
-					case(13):
-						printf("Rey");
-					break;
-				default:
-					printf("%d",jj);
+	static const char *Palos_Cartas[4]={"Corazones","Diamantes","Picas","Treboles"};
+	static const char *Cartas_Muestra[13]={"As","Dos","Tres","Cuatro","Cinco","Seis","Siete","Ocho","Nueve","Diez","Jota","Reina","Rey"};
+	do{
+		for(int ii=0 ; ii<Palos ; ii++){
+			for(int jj=0 ; jj<Cartas ; jj++){
+				if((Arreglo[ii][jj])==iii){
+					printf("La carta numero %d es un %s de %s\n",iii, *(Cartas_Muestra+jj), *(Palos_Cartas+ii));
+					iii++;
 				}
-				switch(ii){
-					case(0):
-						printf("Corazones");
-					break;
-					case(1):
-						printf("Diamantes");
-					break;
-					case(2):
-						printf("Picas");
-					break;
-					case(3):
-						printf("Treboles");
-					break;
-					
-				}
-				iii++;
-				//printf("%d | ", Arreglo[ii][jj]);
 			}
 		}
-		printf("\n");
-	}
-	
+	}while(iii<=Total_Cartas);
 }
