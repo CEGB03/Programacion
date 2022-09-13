@@ -11,6 +11,7 @@ void Mostrar_Mazo_Ordenado(int [Palos][Cartas]);
 
 int main(){
 	int Mazo[Palos][Cartas]={0};
+	Mostrar_Mazo(Mazo);
 	Iniciar_Mazo(Mazo);
 	Mostrar_Mazo(Mazo);
 	Mostrar_Mazo_Ordenado(Mazo);
