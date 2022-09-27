@@ -3,9 +3,10 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #define Limit_List 10
 struct Nodo {
-	int Dato;
+	char Dato;
 	struct Nodo *Next;
 };
 void Agregar_Nodos(struct Nodo **Head);
@@ -13,6 +14,7 @@ void Imprimir_Nodos_Vocales(struct Nodo *Head);
 void Imprimir_Nodos(struct Nodo *Head);
 int main(){
 	struct Nodo *Head = NULL;
+	srand((int)time(0)); 
 	for(int ii=0 ; ii<Limit_List ; ii++){
 		Agregar_Nodos(&Head);
 	}
